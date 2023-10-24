@@ -1,0 +1,75 @@
+
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* common css end */
+
+
+ul{
+    
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-size: 16px;
+   padding: 14px;
+   left: 20px;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+}
+
+nav ul li a::before{
+    content: "" ;
+    width: 0%;
+    height:10%;
+    background-color: rgba(231, 8, 8, 0.293);
+    position: absolute;
+    z-index: -2;
+    top:0;
+    left: 0;
+
+    transition: 0.5s;
+}
+
+nav ul li:hover a::before{
+    width: 100%;
+    
+    
+
+
+}
+
+nav ul li a::after{
+content: "";
+width: 0%;
+height: 10%;
+background-color: rgba(231, 8, 8, 0.293);
+position: absolute;
+top: 90%;
+right: 0;
+z-index: -1;
+transition: 0.35s linear;
+}
+
+
+nav ul li:hover a::after{
+    width: 100%;
+}
+
